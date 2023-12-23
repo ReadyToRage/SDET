@@ -18,6 +18,8 @@ public class Valid_Anagram {
 
 		Boolean result = Anagrams(A, B);
 		System.out.println(result);
+		
+		
 	}
 
 	public static boolean Anagrams(String Str , String Str2) {

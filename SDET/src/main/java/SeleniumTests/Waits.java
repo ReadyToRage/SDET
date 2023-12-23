@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Waits {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 		WebDriver driver = new ChromeDriver();
 		//Implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

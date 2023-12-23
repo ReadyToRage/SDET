@@ -22,55 +22,53 @@ public class Webdriver_example {
 		driver.get("https://www.extentreports.com/docs/versions/5/java/index.html");
 		
 		//Get methods
-		driver.getClass(); 	
-		driver.getCurrentUrl(); 	
-		driver.getPageSource(); 	
-		driver.getTitle(); 
+		driver.getClass(); 	     	//return chrome driver class
+		driver.getCurrentUrl();  	//return the url of current page 	
+		driver.getPageSource();  	//return last modified page source	
+		driver.getTitle(); 		 	 // return page title
 		
 		//Findelement
-		driver.findElement(null);
-		driver.findElements(null); 
+		driver.findElement(null);  		// find the element
+		driver.findElements(null); 		// list of elements
+		
 		//Window
-		driver.getWindowHandle();
-		driver.getWindowHandles(); 
+		driver.getWindowHandle();		//return String
+		driver.getWindowHandles();	    //return Set<String> 
 		
 		//Navigate 
-		driver.navigate().to("URL");
-		driver.navigate().forward();
-		driver.navigate().refresh();
-		driver.navigate().back();
+		driver.navigate().to("URL");    //Navigate to the page
+		driver.navigate().forward();    //Go forward
+		driver.navigate().refresh();    //refresh the page
+		driver.navigate().back();       //going back
 		
 		//Active element - text box
-		driver.switchTo().activeElement();
+		driver.switchTo().activeElement();			//get the active text box
 		
 		//Alert
-		driver.switchTo().alert();
-		
-		
+		driver.switchTo().alert();					//Alert
+				
 		//Frames	
-		driver.switchTo().frame(0);
-		driver.switchTo().frame("");
+		driver.switchTo().frame(0);		//switch to frame
+		driver.switchTo().frame("");	//switch to frame by frameName or frameId
 		WebElement element = null;
-		driver.switchTo().frame(element);		
-		driver.switchTo().parentFrame();
-		driver.switchTo().defaultContent();
+		driver.switchTo().frame(element);	//switch to frame by Element	
+		driver.switchTo().parentFrame();	//switch to Parent frame at top 
+		driver.switchTo().defaultContent(); //switch to default control
 		
 		//cookies
-		driver.manage().getCookies();
-		driver.manage().deleteAllCookies();
+		driver.manage().getCookies();			//get cookies with Set<Cookie>
+		driver.manage().deleteAllCookies();		//delete cookies 
 		
 		//Windows functions
-		driver.manage().window().fullscreen();
-		driver.manage().window().getSize();
-		driver.manage().window().getSize();
-		driver.manage().window().maximize();
-		driver.manage().window().minimize();
-		driver.manage().window().setPosition(null);
-		driver.manage().window().setSize(null);
+		driver.manage().window().fullscreen();		//Full screen 
+		driver.manage().window().getSize();			//return dimension of size of window
+		driver.manage().window().minimize();		//minimize the window
+		driver.manage().window().setPosition(null);	//set the position of window from left corner
+		driver.manage().window().setSize(null);		//set the size of window from left corner
 		
 		//driver closing	
-		driver.close();
-		driver.quit();
+		driver.close();			//close only driver focused window
+		driver.quit();			//close all window
 
 	}
 

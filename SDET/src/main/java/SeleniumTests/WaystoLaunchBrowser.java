@@ -12,7 +12,7 @@ public class WaystoLaunchBrowser {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		usingWebdrivermanager();
+		SimpleWebdriver();
 
 	}
 
@@ -43,7 +43,7 @@ public class WaystoLaunchBrowser {
 
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("URL");  
+		driver.get("https://mvnrepository.com/");  
 
 	}
 

@@ -22,11 +22,10 @@ public class JavaScriptExecutor_Example {
 		
 		js.executeScript("window.scrollTo(0, 0);");		//Scroll up
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight);");	//Scroll to bottom
-		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(null)); 	//Scroll to Element
-		
-		js.executeScript("arguments[0].click();", driver.findElement(null));   //Click button
-		
+		js.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(null)); 	//Scroll to Element		
+		js.executeScript("arguments[0].click();", driver.findElement(null));   //Click button		
 		js.executeScript("window.close();");
+		
 	}
 
 }
