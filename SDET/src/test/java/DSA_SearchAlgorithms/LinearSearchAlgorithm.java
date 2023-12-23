@@ -1,4 +1,4 @@
-package DataStructures_Algorithms;
+package DSA_SearchAlgorithms;
 
 public class LinearSearchAlgorithm {
 
