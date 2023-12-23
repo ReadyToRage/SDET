@@ -4,7 +4,7 @@ public class LinearSearchAlgorithm {
 
 	public static void main(String[] args) {
 		int[] arr = {1,4,6,3,2,7,3,8,9};		
-		int Result = BinarySearch(arr,9);		
+		int Result = LinearSearch(arr,9);		
 		if(Result== -1) {			
 			System.out.println(" Element Not found :"+ Result);
 		}else {
@@ -13,7 +13,7 @@ public class LinearSearchAlgorithm {
 		
 		String[] arrays = {"Hi","Hello","How","are","you"};
 		
-		int res = StrBinarySearch(arrays,"How");
+		int res = StrLinearSearch(arrays,"How");
 		
 		if(res== -1) {			
 			System.out.println(" Element Not found :"+ res);
@@ -26,7 +26,7 @@ public class LinearSearchAlgorithm {
 	//Rules
 	//1. It will work on sorted and unsorted elements
 	//2. It will traverse through each elements in the list / arrays.	
-	public static int BinarySearch(int[] num,int target) {		
+	public static int LinearSearch(int[] num,int target) {		
 		for( int i=0;i<num.length;i++) {			
 			if(num[i]==target) {				
 				return i;
@@ -35,7 +35,7 @@ public class LinearSearchAlgorithm {
 		return -1;
 	}
 	
-	public static int StrBinarySearch(String[] arr,String target) {
+	public static int StrLinearSearch(String[] arr,String target) {
 		
 		for( int i=0;i<arr.length;i++) {
 			if(arr[i].equalsIgnoreCase(target) ) {
