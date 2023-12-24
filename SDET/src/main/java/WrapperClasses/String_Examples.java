@@ -15,7 +15,6 @@ public class String_Examples {
 		Float.valueOf(number);	  //convert String to Float		
 		Double.valueOf(number);   //convert String to Double
 				
-
 		
 	}
 }

@@ -70,7 +70,7 @@ public class TypeCastingExamples {
 		 * System.out.println(Byte.parseByte(se));
 		 */
 		
-		System.out.println(Integer.min(2,5));
+	
 				
 	}
 
