@@ -74,7 +74,7 @@ public class DataDrivenTesting {
 
 		Object[][] data = new Object[NumberOfRows][NumberOfCoulmns];
 
-		Rows:for(int i=1;i<NumberOfRows;i++) {
+		Rows:for(int i=0;i<NumberOfRows;i++) {
 
 			Rows =  Sheet.getRow(i);
 			

@@ -4,16 +4,16 @@ public class BinarySearchAlgorithm {
 
 	public static void main(String[] args) {
 
-		int[] arr = {1,4,6,3,2,7,3,8,9};
-		int Result = BinarySearchAlgo(arr,9);
+		int[] arr = {1,2,3,4,5,6,7,8,9};
+		int Result = BinarySearchAlgo(arr,3);
 		if(Result== -1) {			
 			System.out.println(" Element Not found :"+ Result);
 		}else {
 			System.out.println(" Element found at index :"+ Result);
 		}
 
-		String[] arrays = {"Hi","Hello","How","are","you"};
-		int res = StrbinarySearch(arrays,"you");
+		String[] arrays = {"a","b","c","d","e"};
+		int res = StrbinarySearch(arrays,"e");
 		if(res== -1) {			
 			System.out.println(" Element Not found :"+ res);
 		}else {

@@ -30,7 +30,7 @@ public class Integer_Example {
 		Integer.getInteger(null, 0);
 		Integer.getInteger(null, num);
 		
-		Integer.compress(0, 0);
+		Integer.compare(0, 0);
 		Integer.bitCount(0);
 		
 		Integer.highestOneBit(0);

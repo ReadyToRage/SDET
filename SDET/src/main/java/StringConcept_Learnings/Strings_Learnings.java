@@ -39,7 +39,7 @@ public class Strings_Learnings {
 
 		str.trim();		//remove spaces from starting & ending of string
 		str.strip();	//remove unicode characters eg: \u2000
-		str.stripIndent();  //remove spaces from beginning at each line of string
+		
 		str.stripLeading();	//remove tab / spacebar spaces from beginning at each line of string
 		str.stripTrailing();//remove spaces from end at each line of string
 

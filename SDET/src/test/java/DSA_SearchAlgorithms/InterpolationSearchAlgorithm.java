@@ -22,7 +22,7 @@ public class InterpolationSearchAlgorithm {
 			int position = low + ((target - arr[low]) * (high - low)) / (arr[high] - arr[low]);
 			if(arr[position] == target) {
 				return position;
-			}else if(arr[position] < target) {
+			}else if(arr[position] < target){
 				low = position + 1;
 			}else {
 				high = position - 1;

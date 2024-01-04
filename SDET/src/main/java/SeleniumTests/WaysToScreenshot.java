@@ -28,9 +28,9 @@ public class WaysToScreenshot {
 		
 		File OP = TS.getScreenshotAs(OutputType.FILE);
 		
-		String DesF = "";
+		String DesF = "Path to be saved in folder";
 		
-		File F = new File("");
+		File F = new File(DesF);
 		
 		org.openqa.selenium.io.FileHandler.copy(OP, F);
 			
@@ -48,7 +48,7 @@ public class WaysToScreenshot {
 		
 		BufferedImage img =  R.createScreenCapture(rect);
 		
-		File fil = new File("");
+		File fil = new File("Path to be saved in folder");
 		
 		ImageIO.write(img, "png", fil);
 			

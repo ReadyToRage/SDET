@@ -18,7 +18,7 @@ public class BubbleSort_Example {
 	
 	public static void BubbleSortEx(int[] arr) {
 		int lengthofArray = arr.length-1;      		//Length of the array
-		for(int i=0;i<lengthofArray-1;i++) {		//Starts the loop in the array
+		for(int i=0;i<lengthofArray;i++) {		//Starts the loop in the array
 			for(int j=0;j<lengthofArray-i;j++) {	//start the inner for comparing elements
 				if(arr[j] > arr[j+1]) {				//compare the 0th element with 1st element and so on ...
 					int temp = arr[j];
