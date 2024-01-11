@@ -3,6 +3,7 @@ package SeleniumTests;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 
 public class WindowHandle {
 
@@ -13,6 +14,10 @@ static WebDriver driver;
 		String ParentWindow = driver.getWindowHandle();
 		
 		driver.switchTo().window(ParentWindow);
+		
+		driver.switchTo().newWindow(WindowType.TAB);
+		
+		driver.switchTo().newWindow(WindowType.WINDOW);
 		
 		Set<String> str = driver.getWindowHandles();
 		
@@ -25,6 +30,6 @@ static WebDriver driver;
 		}
 		
 		driver.quit();
-		
+		// Keys.CONTROL+"t" will open new window.
 	}
 }

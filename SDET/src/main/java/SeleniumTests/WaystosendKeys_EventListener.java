@@ -1,6 +1,7 @@
 package SeleniumTests;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,11 +23,17 @@ public class WaystosendKeys_EventListener implements WebDriverEventListener{
 		
 		driver.findElement(By.xpath("")).sendKeys("\n");
 		
-		//driver.submit();
+		//driver.submit(); only for form
+		
+		//\n
+		
+		
 		
 		//Using Robot class
 		
 		//arguments[0].value = "";JS		
+		
+		
 		
 		@SuppressWarnings("deprecation")
 		EventFiringWebDriver EV = new EventFiringWebDriver(driver);

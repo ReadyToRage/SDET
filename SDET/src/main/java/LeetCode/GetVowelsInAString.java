@@ -22,6 +22,7 @@ public class GetVowelsInAString {
 		char[] cha = str.toCharArray();
 				
 		StringBuilder Vowels = new StringBuilder();
+		
 		StringBuilder NonVowels = new StringBuilder();
 		
 		for (char c : cha) {

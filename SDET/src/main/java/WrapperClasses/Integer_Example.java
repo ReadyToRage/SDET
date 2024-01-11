@@ -18,7 +18,7 @@ public class Integer_Example {
 		
 		num.toString();
 		
-		Integer.toBinaryString(0);
+		Integer.toBinaryString(num);
 		Integer.toHexString(0);
 		Integer.toOctalString(0);
 		Integer.toString(0);

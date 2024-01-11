@@ -1,41 +1,31 @@
 ElementNotVisibleException:
-Raised when an element is present in the DOM but not visible on the page.
-
-ElementNotSelectableException:
-Occurs when trying to select an unSelectable element.
-
-NoSuchElementException:
-Thrown when an element could not be found in the DOM.
-
-StaleElementReferenceException:
-Happens when an element is no longer attached to the DOM.
-
-TimeoutException:
-Raised when an operation times out. This can happen with explicit waits.
-
-WebDriverException:
-The base exception class for all WebDriver-related exceptions.
-
-InvalidElementStateException:
-Occurs when trying to perform an operation on an element that is not in an appropriate state.
-
-InvalidSelectorException:
-Thrown when the selector used to find an element is invalid.
-
-NoSuchFrameException:
-Raised when the specified frame cannot be found.
-
-UnhandledAlertException:
-Occurs when an unexpected alert is present.
-
-UnexpectedTagNameException:
-Thrown when a web element has a tag name that does not match the expected tag name.
-
-ElementClickInterceptedException:
-Happens when another element is covering the element that is trying to be clicked.
-
-NoAlertPresentException:
-Raised when switching to an alert but there is no alert present.
-
+	Raised when an element is present in the DOM but not visible on the page.
 ElementNotInteractableException:
-Occurs when an element is present in the DOM but not in a state that can be interacted with.
+	Occurs when an element is present in the DOM but not in a state that can be interacted with.
+ElementNotSelectableException:
+	Occurs when trying to select an unSelectable element.
+StaleElementReferenceException:
+	Happens when an element is no longer attached to the DOM.	
+WebDriverException:
+	The base exception class for all WebDriver-related exceptions.	
+InvalidSelectorException:
+	Thrown when the selector used to find an element is invalid.	
+ElementClickInterceptedException:
+	Happens when another element is covering the element that is trying to be clicked.			
+NoAlertPresentException:
+	Raised when switching to an alert but there is no alert present.	
+NoSuchElementException:
+	Thrown when an element could not be found in the DOM.
+TimeoutException:
+	Raised when an operation times out. This can happen with explicit waits.
+InvalidElementStateException:
+	Occurs when trying to perform an operation on an element that is not in an appropriate state.
+NoSuchFrameException:
+	Raised when the specified frame cannot be found.
+UnhandledAlertException:
+	Occurs when an unexpected alert is present.
+UnexpectedTagNameException:
+	Thrown when a web element has a tag name that does not match the expected tag name.
+
+
+
