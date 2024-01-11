@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PageObjectModel.PageObjectActions">
+      <class name="TestNG.TestNGLearning">
         <methods>
-          <include name="LoadDriver"/>
+          <include name="TestNGSample2"/>
+          <include name="TestNGSample"/>
         </methods>
-      </class> <!-- PageObjectModel.PageObjectActions -->
+      </class> <!-- TestNG.TestNGLearning -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

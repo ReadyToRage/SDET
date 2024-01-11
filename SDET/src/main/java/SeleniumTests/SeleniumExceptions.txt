@@ -1,31 +1,57 @@
 ElementNotVisibleException:
 	Raised when an element is present in the DOM but not visible on the page.
+solution : wait for the element visibility using Explicitwait	
+
 ElementNotInteractableException:
 	Occurs when an element is present in the DOM but not in a state that can be interacted with.
+solution : wait for the element tobe clickable using Explicitwait
+	
 ElementNotSelectableException:
 	Occurs when trying to select an unSelectable element.
+solution : wait for the element presenceof element  to be located using Explicitwait	
+	
 StaleElementReferenceException:
-	Happens when an element is no longer attached to the DOM.	
+	Happens when an element is no longer attached to the DOM.
+solution : use the retry mechanism
+		
 WebDriverException:
-	The base exception class for all WebDriver-related exceptions.	
+	The base exception class for all WebDriver-related exceptions.
+solution : not declared properly
+		
 InvalidSelectorException:
-	Thrown when the selector used to find an element is invalid.	
+	Thrown when the selector used to find an element is invalid.
+solution : locators are wrong
+		
 ElementClickInterceptedException:
-	Happens when another element is covering the element that is trying to be clicked.			
+	Happens when another element is covering the element that is trying to be clicked.
+solution : another element receives the click
+				
 NoAlertPresentException:
-	Raised when switching to an alert but there is no alert present.	
+	Raised when switching to an alert but there is no alert present.
+solution : wait for alert to be present
+		
 NoSuchElementException:
 	Thrown when an element could not be found in the DOM.
+solution : using explicitlywait verify the element presence , exsistence , visibility	
+	
 TimeoutException:
 	Raised when an operation times out. This can happen with explicit waits.
+solution : retry mechanism
+	
 InvalidElementStateException:
 	Occurs when trying to perform an operation on an element that is not in an appropriate state.
+solution : isselected , isenabled , isdisplayed
+	
 NoSuchFrameException:
 	Raised when the specified frame cannot be found.
+solution : Frame is no longer attached to DOM , use waits
+
 UnhandledAlertException:
 	Occurs when an unexpected alert is present.
+solution : alert should be handled
+	
 UnexpectedTagNameException:
 	Thrown when a web element has a tag name that does not match the expected tag name.
-
+solution : handle the dropdown and retry mechanism
 
 
