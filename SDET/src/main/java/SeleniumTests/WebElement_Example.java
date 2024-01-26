@@ -27,7 +27,7 @@ public class WebElement_Example {
 		System.out.println(webelement.getAccessibleName());
 		System.out.println(webelement.getAriaRole());
 		System.out.println(webelement.getDomAttribute("Value"));	
-		System.out.println(	webelement.getCssValue("color"));
+		System.out.println(webelement.getCssValue("color"));
 		System.out.println(webelement.getLocation());
 		System.out.println(webelement.getRect());
 		System.out.println(webelement.getSize());

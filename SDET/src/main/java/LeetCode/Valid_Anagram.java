@@ -32,5 +32,17 @@ public class Valid_Anagram {
 		Arrays.sort(st); Arrays.sort(tt); 
 		return Arrays.equals(st,tt);
 	}
+	
+	public static void Anagram(String str,String str2) {
+		
+		if(str.length()!=str2.length()) {
+			System.out.println("FAIL"); 
+		}
+		char[] ch1 = str.toCharArray();
+		char[] ch2 = str2.toCharArray();
+		Arrays.sort(ch1);Arrays.sort(ch2);
+		Arrays.equals(ch1, ch2);
+		
+	}
 
 }

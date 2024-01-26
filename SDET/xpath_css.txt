@@ -1,0 +1,47 @@
+/----------Xpath------------/
+ 
+allPage             --> //*
+ 
+Text                --> //*[text()='textvalue']
+ 
+starts-with         --> //*[starts-with(@attribute,'attributeValue')]
+ 
+contains            -->//*[contains(@attribute,'attributeValue')]
+ 
+parent              -->//*(@attribute,'attributeValue')/parent::*
+ 
+child               -->//*(@attribute,'attributeValue')/child::*
+ 
+ancestor            -->//*(@attribute,'attributeValue')/ancestor::*
+ 
+following           -->//*(@attribute,'attributeValue')/following::*
+ 
+preceding           -->//*(@attribute,'attributeValue')/preceding::*
+ 
+following-sibling 	--> //*(@attribute,'attributeValue')/following-sibling::*
+ 
+preceding-sibling 	--> //*(@attribute,'attributeValue')/preceding-sibling::*
+
+/------CSS-----/
+ 
+starts-with = [attribute ^ = 'value']
+ 
+contains = [attribute * = 'value']
+ 
+ends-with = [attribute $ = 'value']
+ 
+class = tagname.classvalue  / .classvalue
+ 
+ID = tagname.IDvalue  / #IDvalue
+ 
+child = [ CSS selector ] > tagname:first-child
+ 
+        [ CSS selector ] > tagname:last-child
+        
+        [ CSS selector ] > tagname:nth-child(n)
+        
+descendant = [CSS] [CSS]
+ 
+sibling = [CSS]+[CSS]
+ 
+types = [CSS] > tagname : first-of-type
